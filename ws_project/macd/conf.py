@@ -1,11 +1,16 @@
 import requests
 from pprint import pprint
+
 # Basic factor
 point_limit = -100
+
 # MACD's factor
 ma1_size = 7
 ma2_size = 30
 dea_size = 9
+
+# Huobi Symbols
+huobi_symbols={'HT/USDT'}
 
 
 # Monitor Coin factor
