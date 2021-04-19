@@ -25,7 +25,7 @@ class Binance(BaseExchange):
     def get_ohlcv(self, symbol, timeframe='1d'):
         if symbol in self.api.markets:
             time.sleep(self.api.rateLimit/1000)
-            self.logger.warning(f"get symbol ohlcv: {symbol}")
+            self.logger.info(f"get symbol ohlcv: {symbol}")
             # fetchOHLCV (symbol, timeframe = '1m', since = undefined, limit = undefined, params = {})
             # result array is order by microsec ascending
             # [[ms, open, high, low, close, vol],[]]
